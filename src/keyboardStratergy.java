@@ -28,10 +28,10 @@ public class keyboardStratergy{
             @Override
             public void keyReleased(KeyEvent e) {
                 if (e.getKeyChar() == 'r'){gameModel.createLevel();}
-                if (e.getKeyChar() == 'd'){gameModel.moveRIGHT();}
-                if (e.getKeyChar() == 'a'){gameModel.moveLEFT();}
-                if (e.getKeyChar() == 'w'){gameModel.moveUP();}
-                if (e.getKeyChar() == 's'){gameModel.moveDOWN();}
+                if (e.getKeyCode() == 39){gameModel.moveRIGHT();}
+                if (e.getKeyCode() == 37){gameModel.moveLEFT();}
+                if (e.getKeyCode() == 38){gameModel.moveUP();}
+                if (e.getKeyCode() == 40){gameModel.moveDOWN();}
             }
         };
         gameFrame.addKeyListener(keyListener);
